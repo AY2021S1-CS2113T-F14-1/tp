@@ -9,7 +9,7 @@ public class CommandHelp extends Command {
         return "Commands: hr add, hr delete, hr list, events add, events delete, finance add, finance delete, "
                 + "help, bye";
     }
-@Override
+
     public int validate(UserInput input) {
         if (input.getCategory().equals("") && input.getCommand().equalsIgnoreCase("help")) {
             return ACCEPT;
